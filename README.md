@@ -1,5 +1,4 @@
 # TagString
-
 ## 概述
 在IOS开发中，经常需要获取特定的子视图，我们可以使用苹果官方提供给我们获取子视图的方法viewWithTag。
 - (nullable __kindof UIView *)viewWithTag:(NSInteger)tag; // recursive search. includes self
@@ -17,7 +16,6 @@ UIView *view2 = [self.view viewWithTag:102];
 tagString是字符串型，你可以设置浅显易懂的中英文，从而使代码更具可读性
 
 ## 代码
-
 ###头文件
 ```objective-c
 @interface UIView (TagString)
@@ -40,6 +38,7 @@ tagString是字符串型，你可以设置浅显易懂的中英文，从而使�
 [self.view viewsWithTagString:@"我是UIView"]; //获取所有TagString为"我是UIView"的View数组
 [self.view superviewWithTagString:@"我是superview"]; //获取单个TagString为"我是superview"的View
 ```
+
 相关范例
 ```objective-c
 UIView *subView0 = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 100, 50)];
