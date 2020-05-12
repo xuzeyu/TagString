@@ -6,9 +6,11 @@
 
 这很容易，但当我们获取多个子视图时，就会发现代码的可读性变差，维护难度增加
 例如：
+```objective-c
 UIView *view0 = [self.view viewWithTag:100];
 UIView *view1 = [self.view viewWithTag:101];
 UIView *view2 = [self.view viewWithTag:102];
+```
 你很难从马上这几行代码的tag值100，101， 102看出代表的是哪个子视图，很多时候，需要查看上下文，进行参考，才能发现Tag对应的子视图。
 
 正是为了解决这个问题，我书写了这个UIView的类别TagString，可以更好的获取子视图，
