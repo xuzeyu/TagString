@@ -1,7 +1,7 @@
 # TagString
 ## 概述
 在IOS开发中，经常需要获取特定的子视图，我们可以使用苹果官方提供给我们获取子视图的方法viewWithTag。
-- (nullable __kindof UIView *)viewWithTag:(NSInteger)tag; // recursive search. includes self
+`- (nullable __kindof UIView *)viewWithTag:(NSInteger)tag; // recursive search. includes self`
 传入指定的NSInteger型数字就可以获取对应的UIView。
 
 这很容易，但当我们获取多个子视图时，就会发现代码的可读性变差，维护难度增加
