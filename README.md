@@ -16,7 +16,7 @@ UIView *view2 = [self.view viewWithTag:102];
 tagString是字符串型，你可以设置浅显易懂的中英文，从而使代码更具可读性
 
 ## 代码
-###头文件
+### 头文件
 ```objective-c
 @interface UIView (TagString)
 
@@ -31,7 +31,7 @@ tagString是字符串型，你可以设置浅显易懂的中英文，从而使�
 @end
 ```
 
-###调用范例
+### 调用范例
 如何调用
 ```objective-c
 [self.view viewWithTagString:@"我是UIView"]; //获取单个TagString为"我是UIView"的View
@@ -71,9 +71,9 @@ NSLog(@"查找所有子视图：%@", [self.view viewsWithTagString:@"我是textF
 NSLog(@"查找父视图：%@", [textField1 superviewWithTagString:@"我是UIView2"]);
 ```
 
-##结语
+## 结语
 你觉得代码有问题和改进的地方，请Issues我吧
 
-##许可证
+## 许可证
 TagString 使用 MIT 许可证，详情见 LICENSE 文件。
 
